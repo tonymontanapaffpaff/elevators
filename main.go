@@ -58,8 +58,8 @@ func runClient(serverAddress string, args []string) {
 	cl.Start(serverAddress)
 	// close client whenever we stop
 	defer cl.End()
-	name := args[2] // client name
+	name := args[2]     // client name
 	schedule := args[3] // client schedule in a specified format (example: 5:3_9:2),
-						// where underscore separates trips, colon separates floor number and residence time
+	// where underscore separates trips, colon separates floor number and time staying
 	cl.AddWorker(name, schedule)
 }
