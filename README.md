@@ -12,4 +12,7 @@ Then we need to run the client:
 `go run main.go client [worker name] [worker schedule]` 
 
 Worker can visit the different floors per day, so his schedule introduced in following format:  
-`[floor number]:[and residence time]_[floor number]:[and residence time]...`
+`[floor number]:[time staying in sec]_[floor number]:[time staying in sec]...`
+
+Example:
+`go run main.go client Frodo 12:30_4:10_7:5`
