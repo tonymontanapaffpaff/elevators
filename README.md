@@ -11,5 +11,5 @@ First of all we need to run the server:
 Then we need to run the client:  
 `go run main.go client [worker name] [worker schedule]` 
 
-Worker can visit the different floors per day, so his `schedule` introduced in following format:  
+Worker can visit the different floors per day, so his schedule introduced in following format:  
 `[floor number]:[and residence time]_[floor number]:[and residence time]...`
